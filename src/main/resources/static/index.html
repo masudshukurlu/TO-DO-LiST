@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <main class="workspace">
+            <div class="workspace-header">
+                <h1 id="workspace-title">Workspace</h1>
+                <button id="new-task-btn" class="btn btn-task" style="display: none;">New Task</button>
+            </div>
+
+            <div id="welcome" class="welcome">
+                <button id="new-project-btn" class="btn btn-project">New Project</button>
+                <p>Başlamaq üçün yeni project yarat.</p>
+            </div>
+
+            <div id="tasks" class="tasks"></div>
+        </main>
+
+        <aside class="sidebar">
+            <h2>Projects</h2>
+            <button id="sidebar-new-project-btn" class="btn btn-sidebar-project">+ New Project</button>
+            <ul id="project-list" class="project-list"></ul>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
